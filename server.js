@@ -26,7 +26,7 @@ app.use('*', (_req, res) => {
     res.status(404).json({ error: 'Route not found' });
 });
 
-app.use((err, _req, res) => {
+app.use((err, _req, res, _next) => {
     console.error(err.stack);
     res.status(500).json({ error: 'Internal Server Error'});
 })
