@@ -17,7 +17,7 @@ export async function seed(knex) {
       fee: 'MXN 200',
       nearby_attraction: 'Tulum, Xel-Há Park',
       travel_tips: 'Bring your snorkeling gear and an underwater camera to capture the beauty of the cenote. Arrive early to enjoy the site with fewer visitors.',
-      attraction_image_path: 'http://localhost:8080/images/cancun/cenote-dos-ojos.png'
+      attraction_image_path: '/images/cancun/cenote-dos-ojos.png'
     },
     {
       id: 2,
@@ -30,7 +30,7 @@ export async function seed(knex) {
       fee: 'MXN 480 (INAH fee)',
       nearby_attraction: 'Ik Kil Cenote, Valladolid',
       travel_tips: 'Bring water, a hat, and sunscreen. Consider hiring a guide to learn more about the history of the site.',
-      attraction_image_path: 'http://localhost:8080/images/cancun/chichén-itzá.png'
+      attraction_image_path: '/images/cancun/chichén-itzá.png'
     },
     {
       id: 3,
@@ -43,7 +43,7 @@ export async function seed(knex) {
       fee: 'MXN 70',
       nearby_attraction: 'Dolphin Beach (Playa Delfines), Museo Maya de Cancún',
       travel_tips: 'Wear comfortable shoes and take a walk along the beach at Playa Delfines after visiting the ruins.',
-      attraction_image_path: 'http://localhost:8080/images/cancun/el-rey-ruins.png'
+      attraction_image_path: '/images/cancun/el-rey-ruins.png'
     },
     {
       id: 4,
@@ -56,7 +56,7 @@ export async function seed(knex) {
       fee: 'Free entry',
       nearby_attraction: 'El Rey Ruins, Dolphin Watching Tours',
       travel_tips: 'Arrive early to take photos at the Cancun sign before it gets crowded. There are no beach clubs, so bring your own food and drinks.',
-      attraction_image_path: 'http://localhost:8080/images/cancun/playa-delfines.png'
+      attraction_image_path: '/images/cancun/playa-delfines.png'
     },
     {
       id: 5,
@@ -69,7 +69,7 @@ export async function seed(knex) {
       fee: 'MXN 1,800 for general admission',
       nearby_attraction: 'Xplor Park, Xel-Há Park',
       travel_tips: 'Plan to spend the entire day at Xcaret. Wear comfortable clothes and bring a swimsuit for the water activities. Book tickets online for discounts.',
-      attraction_image_path: 'http://localhost:8080/images/cancun/xcaret-park.png'
+      attraction_image_path: '/images/cancun/xcaret-park.png'
     },
     {
       id: 6,
@@ -82,7 +82,7 @@ export async function seed(knex) {
       fee: '€26 (donations for preservation appreciated)',
       nearby_attraction: 'Casa Milà, Casa Batlló, Park Güell',
       travel_tips: 'Pre-book tickets to skip the long queues, visit early morning or late afternoon for fewer crowds.',
-      attraction_image_path: 'http://localhost:8080/images/barcelona/sagrada-familia.png'
+      attraction_image_path: '/images/barcelona/sagrada-familia.png'
     },
     {
       id: 7,
@@ -95,7 +95,7 @@ export async function seed(knex) {
       fee: '€10',
       nearby_attraction: 'La Sagrada Família, Gràcia District',
       travel_tips: 'Wear comfortable shoes, as the park involves a lot of walking. Visit during the off-season to avoid crowds.',
-      attraction_image_path: 'http://localhost:8080/images/barcelona/park-güell.png'
+      attraction_image_path: '/images/barcelona/park-güell.png'
     },
     {
       id: 8,
@@ -108,7 +108,7 @@ export async function seed(knex) {
       fee: '€25',
       nearby_attraction: 'La Pedrera (Casa Milà), Passeig de Gràcia',
       travel_tips: 'Audio guides are available for a self-guided tour. Visit in the afternoon to capture the facade under the best lighting.',
-      attraction_image_path: 'http://localhost:8080/images/barcelona/casa-batlló.png'
+      attraction_image_path: '/images/barcelona/casa-batlló.png'
     },
     {
       id: 9,
@@ -121,7 +121,7 @@ export async function seed(knex) {
       fee: 'Free entry',
       nearby_attraction: 'Boqueria Market, Columbus Monument',
       travel_tips: 'Beware of pickpockets, especially in crowded areas. Enjoy street food from the local vendors at Boqueria Market.',
-      attraction_image_path: 'http://localhost:8080/images/barcelona/la-rambla.png'
+      attraction_image_path: '/images/barcelona/la-rambla.png'
     },
     {
       id: 10,
@@ -134,7 +134,7 @@ export async function seed(knex) {
       fee: '€28 for a stadium tour',
       nearby_attraction: 'FC Barcelona Museum, Les Corts District',
       travel_tips: 'Book tickets in advance for both tours and matches. If attending a game, arrive early for the pre-match atmosphere.',
-      attraction_image_path: 'http://localhost:8080/images/barcelona/camp-nou.png'
+      attraction_image_path: '/images/barcelona/camp-nou.png'
     },
     {
       id: 11,
@@ -147,7 +147,7 @@ export async function seed(knex) {
       fee: 'Free entry (donations appreciated)',
       nearby_attraction: 'Blue Mosque, Topkapi Palace, Basilica Cistern',
       travel_tips: 'Visit during non-prayer times to explore inside. No flash photography is allowed, and modest dress is required.',
-      attraction_image_path: 'http://localhost:8080/images/istanbul/hagia-sophia.png'
+      attraction_image_path: '/images/istanbul/hagia-sophia.png'
     },
     {
       id: 12,
@@ -160,7 +160,7 @@ export async function seed(knex) {
       fee: 'Free entry',
       nearby_attraction: 'Hagia Sophia, Basilica Cistern, Hippodrome',
       travel_tips: 'Dress modestly (women must cover their heads). Shoes must be removed before entering. Visit early to avoid long queues.',
-      attraction_image_path: 'http://localhost:8080/images/istanbul/blue-mosque.png'
+      attraction_image_path: '/images/istanbul/blue-mosque.png'
     },
     {
       id: 13,
@@ -173,7 +173,7 @@ export async function seed(knex) {
       fee: '80 Turkish Lira for general admission',
       nearby_attraction: 'Bosphorus Cruise, Taksim Square',
       travel_tips: 'Wear comfortable shoes, as the palace grounds are extensive. Photography is not allowed inside the palace.',
-      attraction_image_path: 'http://localhost:8080/images/istanbul/dolmabahçe-palace.png'
+      attraction_image_path: '/images/istanbul/dolmabahçe-palace.png'
     },
     {
       id: 14,
@@ -186,7 +186,7 @@ export async function seed(knex) {
       fee: 'Free entry',
       nearby_attraction: 'Spice Bazaar, Suleymaniye Mosque',
       travel_tips: 'Bargain with sellers for better prices. Keep an eye on your belongings in crowded areas.',
-      attraction_image_path: 'http://localhost:8080/images/istanbul/grand-bazaar.png'
+      attraction_image_path: '/images/istanbul/grand-bazaar.png'
     },
     {
       id: 15,
@@ -199,7 +199,7 @@ export async function seed(knex) {
       fee: '30 Turkish Lira',
       nearby_attraction: 'Hagia Sophia, Blue Mosque',
       travel_tips: 'Wear comfortable shoes, as the floors can be slippery. The cistern is dimly lit, so be prepared for low-light conditions.',
-      attraction_image_path: 'http://localhost:8080/images/istanbul/basilica-cistern.png'
+      attraction_image_path: '/images/istanbul/basilica-cistern.png'
     },
     {
       id: 16,
@@ -212,7 +212,7 @@ export async function seed(knex) {
       fee: '£26.50 for a tour of the State Rooms',
       nearby_attraction: 'St. James’s Park, The Mall',
       travel_tips: 'Arrive early to secure a good spot for the Changing of the Guard. Pre-book tickets for State Room tours during the summer.',
-      attraction_image_path: 'http://localhost:8080/images/london/buckingham-palace.png'
+      attraction_image_path: '/images/london/buckingham-palace.png'
     },
     {
       id: 17,
@@ -225,7 +225,7 @@ export async function seed(knex) {
       fee: '£22 for a guided tour',
       nearby_attraction: 'Big Ben, Westminster Abbey',
       travel_tips: 'Book tours in advance, especially for summer visits. Photography is restricted inside certain areas.',
-      attraction_image_path: 'http://localhost:8080/images/london/houses-of-parliament.png'
+      attraction_image_path: '/images/london/houses-of-parliament.png'
     },
     {
       id: 18,
@@ -238,7 +238,7 @@ export async function seed(knex) {
       fee: 'Free entry (donations welcome)',
       nearby_attraction: 'Trafalgar Square, Covent Garden',
       travel_tips: 'Take a free guided tour for more context on the art. Avoid weekends to experience the museum with fewer crowds.',
-      attraction_image_path: 'http://localhost:8080/images/london/the-national-gallery.png'
+      attraction_image_path: '/images/london/the-national-gallery.png'
     },
     {
       id: 19,
@@ -251,7 +251,7 @@ export async function seed(knex) {
       fee: '£29.90 for general admission',
       nearby_attraction: 'Tower Bridge, The Shard',
       travel_tips: 'Visit early to avoid long lines for the Crown Jewels. Take a guided tour with a Beefeater to learn about the Tower’s history.',
-      attraction_image_path: 'http://localhost:8080/images/london/tower-of-london.png'
+      attraction_image_path: '/images/london/tower-of-london.png'
     },
     {
       id: 20,
@@ -264,7 +264,7 @@ export async function seed(knex) {
       fee: '£25 for general admission',
       nearby_attraction: 'Houses of Parliament, Big Ben',
       travel_tips: 'Book tickets online to avoid queues. Photography is not allowed inside the abbey.',
-      attraction_image_path: 'http://localhost:8080/images/london/westminster-abbey.png'
+      attraction_image_path: '/images/london/westminster-abbey.png'
     },
     {
       id: 21,
@@ -277,7 +277,7 @@ export async function seed(knex) {
       fee: 'Free entry',
       nearby_attraction: 'Pushkin Museum, Gogol House',
       travel_tips: 'Explore the local art galleries and cafes. Visit during the day to experience the vibrant street performances.',
-      attraction_image_path: 'http://localhost:8080/images/moscow/arbat-street.png'
+      attraction_image_path: '/images/moscow/arbat-street.png'
     },
     {
       id: 22,
@@ -290,7 +290,7 @@ export async function seed(knex) {
       fee: 'Prices vary based on the performance',
       nearby_attraction: 'Red Square, State Historical Museum',
       travel_tips: 'Book tickets in advance, especially for popular performances. Dress formally if attending a ballet or opera.',
-      attraction_image_path: 'http://localhost:8080/images/moscow/bolshoi-theatre.png'
+      attraction_image_path: '/images/moscow/bolshoi-theatre.png'
     },
     {
       id: 23,
@@ -303,7 +303,7 @@ export async function seed(knex) {
       fee: '700 RUB for general admission to the Armoury Chamber',
       nearby_attraction: 'Red Square, Lenin’s Mausoleum',
       travel_tips: 'Book tickets online to avoid queues. Guided tours are recommended to fully understand the rich history of the Kremlin.',
-      attraction_image_path: 'http://localhost:8080/images/moscow/kremlin.png'
+      attraction_image_path: '/images/moscow/kremlin.png'
     },
     {
       id: 24,
@@ -316,7 +316,7 @@ export async function seed(knex) {
       fee: '700 RUB for general admission',
       nearby_attraction: 'Kremlin, GUM Shopping Mall',
       travel_tips: 'The best views of the cathedral are from Red Square. Book tickets online to avoid long queues.',
-      attraction_image_path: 'http://localhost:8080/images/moscow/saint-basils-cathedral.png'
+      attraction_image_path: '/images/moscow/saint-basils-cathedral.png'
     },
     {
       id: 25,
@@ -329,7 +329,7 @@ export async function seed(knex) {
       fee: '500 RUB for general admission',
       nearby_attraction: 'Red Square, Saint Basil’s Cathedral',
       travel_tips: 'Plan to spend a few hours exploring the vast collection. English audio guides are available.',
-      attraction_image_path: 'http://localhost:8080/images/moscow/state-historical-museum.png'
+      attraction_image_path: '/images/moscow/state-historical-museum.png'
     },
     {
       id: 26,
@@ -342,7 +342,7 @@ export async function seed(knex) {
       fee: 'Free entry',
       nearby_attraction: 'Arc de Triomphe, Place de la Concorde',
       travel_tips: 'Visit in the evening to see the avenue beautifully lit up. Make sure to stop by a café for a quintessential Parisian experience.',
-      attraction_image_path: 'http://localhost:8080/images/paris/champs-elysées.png'
+      attraction_image_path: '/images/paris/champs-elysées.png'
     },
     {
       id: 27,
@@ -355,7 +355,7 @@ export async function seed(knex) {
       fee: '€17 for general admission',
       nearby_attraction: 'Jardin des Tuileries, Musée d’Orsay',
       travel_tips: 'Pre-book your tickets to skip the lines. Focus on a specific section of the museum if you’re short on time.',
-      attraction_image_path: 'http://localhost:8080/images/paris/louvre-museum.png'
+      attraction_image_path: '/images/paris/louvre-museum.png'
     },
     {
       id: 28,
@@ -368,7 +368,7 @@ export async function seed(knex) {
       fee: 'Free entry',
       nearby_attraction: 'Panthéon, Saint-Sulpice Church',
       travel_tips: 'Bring a book and enjoy the serenity of the gardens. Great for a picnic or a relaxing break from sightseeing.',
-      attraction_image_path: 'http://localhost:8080/images/paris/luxembourg-gardens.png'
+      attraction_image_path: '/images/paris/luxembourg-gardens.png'
     },
     {
       id: 29,
@@ -381,7 +381,7 @@ export async function seed(knex) {
       fee: 'Free entry (donations for restoration appreciated)',
       nearby_attraction: 'Île de la Cité, Sainte-Chapelle',
       travel_tips: 'Admire the exterior from various vantage points along the Seine River. You can also view ongoing restoration efforts.',
-      attraction_image_path: 'http://localhost:8080/images/paris/notre-dame-cathedral.png'
+      attraction_image_path: '/images/paris/notre-dame-cathedral.png'
     },
     {
       id: 30,
@@ -394,7 +394,7 @@ export async function seed(knex) {
       fee: 'Free entry',
       nearby_attraction: 'Montmartre, Place du Tertre',
       travel_tips: 'Climb to the top of the dome for one of the best views of Paris. Visit Montmartre for an artistic experience after touring the basilica.',
-      attraction_image_path: 'http://localhost:8080/images/paris/sacré-cœur-basilica.png'
+      attraction_image_path: '/images/paris/sacré-cœur-basilica.png'
     },
     {
       id: 31,
@@ -407,7 +407,7 @@ export async function seed(knex) {
       fee: 'R$97 for train tickets to the summit',
       nearby_attraction: 'Tijuca National Park, Sugarloaf Mountain',
       travel_tips: 'Arrive early to avoid the long lines. Consider taking the train or a hike up to the summit for stunning views.',
-      attraction_image_path: 'http://localhost:8080/images/rio-de-janeiro/christ-the-redeemer.png'
+      attraction_image_path: '/images/rio-de-janeiro/christ-the-redeemer.png'
     },
     {
       id: 32,
@@ -420,7 +420,7 @@ export async function seed(knex) {
       fee: 'Free entry',
       nearby_attraction: 'Ipanema Beach, Sugarloaf Mountain',
       travel_tips: 'Bring sunscreen and stay hydrated. Try the local food and drinks from the beachside vendors.',
-      attraction_image_path: 'http://localhost:8080/images/rio-de-janeiro/copacabana-beach.png'
+      attraction_image_path: '/images/rio-de-janeiro/copacabana-beach.png'
     },
     {
       id: 33,
@@ -433,7 +433,7 @@ export async function seed(knex) {
       fee: 'R$50 for a stadium tour',
       nearby_attraction: 'Sambadrome, Rio de Janeiro Zoo',
       travel_tips: 'If visiting on a non-match day, take the guided tour to learn about the history of the stadium. On match days, arrive early for the pre-match atmosphere.',
-      attraction_image_path: 'http://localhost:8080/images/rio-de-janeiro/maracanã-stadium.png'
+      attraction_image_path: '/images/rio-de-janeiro/maracanã-stadium.png'
     },
     {
       id: 34,
@@ -446,7 +446,7 @@ export async function seed(knex) {
       fee: 'Free entry',
       nearby_attraction: 'Lapa Arches, Santa Teresa',
       travel_tips: 'Bring your camera to capture the vibrant colors of the tiles. Be mindful of your belongings, as it can get crowded.',
-      attraction_image_path: 'http://localhost:8080/images/rio-de-janeiro/selarón-steps.png'
+      attraction_image_path: '/images/rio-de-janeiro/selarón-steps.png'
     },
     {
       id: 35,
@@ -459,7 +459,7 @@ export async function seed(knex) {
       fee: 'R$110 for a round-trip cable car ride',
       nearby_attraction: 'Christ the Redeemer, Botafogo Beach',
       travel_tips: 'Take the cable car up to the summit for amazing views. Visit in the late afternoon to catch the sunset over the city.',
-      attraction_image_path: 'http://localhost:8080/images/rio-de-janeiro/sugarloaf-mountain.png'
+      attraction_image_path: '/images/rio-de-janeiro/sugarloaf-mountain.png'
     },
     {
       id: 36,
@@ -472,7 +472,7 @@ export async function seed(knex) {
       fee: '€16 for general admission',
       nearby_attraction: 'Roman Forum, Palatine Hill',
       travel_tips: 'Book tickets in advance to skip the lines. Take a guided tour to fully appreciate the history of the Colosseum.',
-      attraction_image_path: 'http://localhost:8080/images/rome/colosseum.png'
+      attraction_image_path: '/images/rome/colosseum.png'
     },
     {
       id: 37,
@@ -485,7 +485,7 @@ export async function seed(knex) {
       fee: 'Free entry (dome climb costs €10)',
       nearby_attraction: 'Vatican Museums, Sistine Chapel',
       travel_tips: 'Visit early to avoid the lines. Climb to the top of the dome for panoramic views of Rome.',
-      attraction_image_path: 'http://localhost:8080/images/rome/st-peters-basilica.png'
+      attraction_image_path: '/images/rome/st-peters-basilica.png'
     },
     {
       id: 38,
@@ -498,7 +498,7 @@ export async function seed(knex) {
       fee: 'Free entry',
       nearby_attraction: 'Piazza Navona, Trevi Fountain',
       travel_tips: 'Visit early to appreciate the architecture without the crowds. Take time to explore the square around it.',
-      attraction_image_path: 'http://localhost:8080/images/rome/the-pantheon.png'
+      attraction_image_path: '/images/rome/the-pantheon.png'
     },
     {
       id: 39,
@@ -511,7 +511,7 @@ export async function seed(knex) {
       fee: 'Free entry',
       nearby_attraction: 'Spanish Steps, Piazza di Spagna',
       travel_tips: 'Visit at night to see the fountain beautifully lit up. Don’t forget to throw a coin in for good luck.',
-      attraction_image_path: 'http://localhost:8080/images/rome/trevi-fountain.png'
+      attraction_image_path: '/images/rome/trevi-fountain.png'
     },
     {
       id: 40,
@@ -524,7 +524,7 @@ export async function seed(knex) {
       fee: '€17 for general admission',
       nearby_attraction: 'St. Peter’s Basilica, Sistine Chapel',
       travel_tips: 'Pre-book tickets online to avoid long lines. Take a guided tour to fully appreciate the art collection.',
-      attraction_image_path: 'http://localhost:8080/images/rome/vatican-museums.png'
+      attraction_image_path: '/images/rome/vatican-museums.png'
     },
     {
       id: 41,
@@ -537,7 +537,7 @@ export async function seed(knex) {
       fee: 'Free entry',
       nearby_attraction: 'Oriental Pearl Tower, Nanjing Road',
       travel_tips: 'Visit in the evening to see the skyline illuminated. Take a stroll along the promenade for great photo opportunities.',
-      attraction_image_path: 'http://localhost:8080/images/shanghai/the-bund.png'
+      attraction_image_path: '/images/shanghai/the-bund.png'
     },
     {
       id: 42,
@@ -550,7 +550,7 @@ export async function seed(knex) {
       fee: '40 CNY for general admission',
       nearby_attraction: 'City God Temple, Old Town Market',
       travel_tips: 'Visit in the morning to avoid the crowds and fully appreciate the serene atmosphere. Don’t miss the City God Temple nearby.',
-      attraction_image_path: 'http://localhost:8080/images/shanghai/yu-garden.png'
+      attraction_image_path: '/images/shanghai/yu-garden.png'
     },
     {
       id: 43,
@@ -563,7 +563,7 @@ export async function seed(knex) {
       fee: '20 CNY for general admission',
       nearby_attraction: 'Jing’an Temple, People’s Square',
       travel_tips: 'Visit early to enjoy the peaceful ambiance. Respect temple etiquette and observe quietness while inside.',
-      attraction_image_path: 'http://localhost:8080/images/shanghai/jade-buddha-temple.png'
+      attraction_image_path: '/images/shanghai/jade-buddha-temple.png'
     },
     {
       id: 44,
@@ -576,7 +576,7 @@ export async function seed(knex) {
       fee: 'Free entry',
       nearby_attraction: 'People’s Square, The Bund',
       travel_tips: 'Explore Nanjing Road in the evening for a vibrant atmosphere with illuminated signs and bustling crowds. Wear comfortable shoes for walking.',
-      attraction_image_path: 'http://localhost:8080/images/shanghai/nanjing-road.png'
+      attraction_image_path: '/images/shanghai/nanjing-road.png'
     },
     {
       id: 45,
@@ -589,7 +589,7 @@ export async function seed(knex) {
       fee: '50 CNY for general admission',
       nearby_attraction: 'Hongkou Park, Lu Xun Park',
       travel_tips: 'Visit the museum to learn about the unique history of the Jewish refugees in Shanghai. Allocate at least an hour to explore the exhibits.',
-      attraction_image_path: 'http://localhost:8080/images/shanghai/shanghai-jewish-refugees-museum.png'
+      attraction_image_path: '/images/shanghai/shanghai-jewish-refugees-museum.png'
     },
     {
       id: 46,
@@ -602,7 +602,7 @@ export async function seed(knex) {
       fee: 'Tour prices start at AUD $42, performance prices vary',
       nearby_attraction: 'Sydney Harbour Bridge, Royal Botanic Garden',
       travel_tips: 'Book tickets in advance for performances. Take a guided tour to learn about the history and architecture.',
-      attraction_image_path: 'http://localhost:8080/images/sydney/sydney-opera-house.png'
+      attraction_image_path: '/images/sydney/sydney-opera-house.png'
     },
     {
       id: 47,
@@ -615,7 +615,7 @@ export async function seed(knex) {
       fee: 'Free to walk or drive across, BridgeClimb prices start at AUD $174',
       nearby_attraction: 'Sydney Opera House, The Rocks',
       travel_tips: 'For a thrilling experience, try the BridgeClimb. Walking across the bridge provides excellent photo opportunities of the Opera House and the harbour.',
-      attraction_image_path: 'http://localhost:8080/images/sydney/sydney-harbour-bridge.png'
+      attraction_image_path: '/images/sydney/sydney-harbour-bridge.png'
     },
     {
       id: 48,
@@ -628,7 +628,7 @@ export async function seed(knex) {
       fee: 'Free entry',
       nearby_attraction: 'Bondi to Coogee Coastal Walk, Bronte Beach',
       travel_tips: 'Arrive early for a quieter experience. Take the Bondi to Coogee walk for spectacular coastal views.',
-      attraction_image_path: 'http://localhost:8080/images/sydney/bondi-beach.png'
+      attraction_image_path: '/images/sydney/bondi-beach.png'
     },
     {
       id: 49,
@@ -641,7 +641,7 @@ export async function seed(knex) {
       fee: 'General admission starts at AUD $49',
       nearby_attraction: 'Bradleys Head, Sydney Harbour National Park',
       travel_tips: 'Take the ferry from Circular Quay for a scenic route to the zoo. Plan at least half a day to explore all the exhibits.',
-      attraction_image_path: 'http://localhost:8080/images/sydney/taronga-zoo.png'
+      attraction_image_path: '/images/sydney/taronga-zoo.png'
     },
     {
       id: 50,
@@ -654,7 +654,7 @@ export async function seed(knex) {
       fee: 'Free entry',
       nearby_attraction: 'Sydney Harbour Bridge, Circular Quay',
       travel_tips: 'Visit on weekends to enjoy the markets. Explore the historic buildings and enjoy the local food scene.',
-      attraction_image_path: 'http://localhost:8080/images/sydney/the-rocks.png'
+      attraction_image_path: '/images/sydney/the-rocks.png'
     }
   ]
   );
