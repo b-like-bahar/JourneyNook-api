@@ -4,8 +4,8 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "db:migrate": "knex migrate:latest",
-    "db:seed": "knex seed:run",
+    "migrate": "knex migrate:latest",
+    "seed": "knex seed:run",
     "dev": "node --watch server.js",
     "start": "node server.js"
   },
