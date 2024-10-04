@@ -3,7 +3,7 @@
  * @returns { Promise<void> }
  */
 export async function seed(knex) {
-  // Deletes ALL existing entries
+  
   await knex('cities').del();
   await knex('cities').insert([
     {
@@ -16,8 +16,8 @@ export async function seed(knex) {
       id: 2,
       city_name: 'Barcelona',
       country: 'Spain',
-      city_image_path: '/https://res.cloudinary.com/deuku9jpm/image/upload/v1728039155/Barcelona-Spain_zswk2w.png'
-    },
+      city_image_path: 'https://res.cloudinary.com/deuku9jpm/image/upload/v1728039155/Barcelona-Spain_zswk2w.png'
+    },  
     {
       id: 3,
       city_name: 'Istanbul',
@@ -28,7 +28,7 @@ export async function seed(knex) {
       id: 4,
       city_name: 'London',
       country: 'England',
-      city_image_path: '/https://res.cloudinary.com/deuku9jpm/image/upload/v1728039163/London-England_v4ihhe.png'
+      city_image_path: 'https://res.cloudinary.com/deuku9jpm/image/upload/v1728039163/London-England_v4ihhe.png'
     },
     {
       id: 5,
