@@ -1,15 +1,17 @@
-export function createTripPrompt(days, budget, tripType, cityName) {
-
+export function createTripPrompt(days, budget, numberOfPeople, tripType, cityName) {
     const dailyBudget = (budget / days).toFixed(2);
-    let content = `Generate a detailed ${days}-day itinerary for a ${tripType} trip in ${cityName}. 
+    const lowerBudgetLimit = (budget * 0.95).toFixed(2);
+    const upperBudgetLimit = (budget * 1.05).toFixed(2);
+
+    let content = `Generate a detailed ${days}-day itinerary for a ${tripType} trip in ${cityName} for ${numberOfPeople} people. 
                 The total trip budget is ${budget} dollars, with an average daily budget of ${dailyBudget} dollars.
-                Some days can be more expensive, and others less expensive, 
-                but ensure the total cost for the trip stays within the overall budget. 
-                Please provide activities, meals, and experiences for **each** day. 
+                Ensure the total cost for the trip stays within 95% to 105% of the overall budget, meaning it should be between ${lowerBudgetLimit} and ${upperBudgetLimit} dollars.
+                The budget provided should be used effectively for ${numberOfPeople} people without much leftover.
+                Please provide activities, meals, and experiences for each day, considering the group size. 
                 Break each day into morning, afternoon, and evening segments. 
-                Provide approximate costs for each day, and make sure **no days are left empty**.
+                Provide approximate costs for each day, and make sure no days are left empty.
                 State the cost of the whole day just once on each day.
-                make the plans in a way that estimated total cost for a trip be really close to the given budget.
+                Make the plans in a way that the estimated total cost for the trip is very close to the given budget, ideally between ${lowerBudgetLimit} and ${upperBudgetLimit} dollars.
 
                 Ensure the format is strictly:
 
@@ -18,18 +20,18 @@ export function createTripPrompt(days, budget, tripType, cityName) {
                 Afternoon: [Activity and cost]\n
                 Evening: [Activity and cost]\n
                 Total Cost for Day X: [total cost]\n
-}
 
                 Do not provide more than ${days} days in total.`;
 
     if (tripType === "family") {
-        content = `Generate a detailed ${days}-day family-friendly itinerary in ${cityName}. 
+        content = `Generate a detailed ${days}-day family-friendly itinerary in ${cityName} for ${numberOfPeople} people. 
                 The total trip budget is ${budget} dollars, with an average daily budget of ${dailyBudget} dollars. 
                 Include activities suitable for children, affordable dining, and safe accommodations. 
                 For each day, break it into morning, afternoon, and evening segments with activities for kids and families.
-                Some days can be more expensive, provide approximate costs for each day, and make sure no days are left empty.
+                Ensure the budget is used effectively for ${numberOfPeople} people, and the estimated total cost falls between ${lowerBudgetLimit} and ${upperBudgetLimit} dollars.
                 State the cost of the whole day just once on each day.
-                make the plans in a way that estimated total cost for a trip be really close to the given budget.
+                Make the plans in a way that the estimated total cost for the trip is very close to the given budget.
+
                 Follow the format:
 
                 Day X:\n
@@ -44,8 +46,9 @@ export function createTripPrompt(days, budget, tripType, cityName) {
                 The total trip budget is ${budget} dollars, with an average daily budget of ${dailyBudget} dollars.
                 Include romantic activities, scenic views, and intimate dining experiences. 
                 Break each day into morning, afternoon, and evening plans. Provide approximate costs for each day.
-                No days should be left without activities or dining suggestions.
-                make the plans in a way that estimated total cost for a trip be really close to the given budget.
+                Ensure that the budget is used effectively for the couple, and the estimated total cost falls between ${lowerBudgetLimit} and ${upperBudgetLimit} dollars.
+                Make the plans in a way that the estimated total cost for the trip is very close to the given budget.
+
                 Follow the format:
 
                 Day X:\n
@@ -56,12 +59,13 @@ export function createTripPrompt(days, budget, tripType, cityName) {
 
                 Do not provide more than ${days} days in total.`;
     } else if (tripType === "friends") {
-        content = `Generate a detailed ${days}-day fun itinerary for a group of friends in ${cityName}. 
+        content = `Generate a detailed ${days}-day fun itinerary for a group of friends (${numberOfPeople} people) in ${cityName}. 
                 The total trip budget is ${budget} dollars, with an average daily budget of ${dailyBudget} dollars.
                 Include group activities, social hangouts, and nightlife. Break each day into morning, afternoon, and evening segments.
-                Provide approximate costs for each day.
+                Provide approximate costs for each day, ensuring the budget is used effectively for ${numberOfPeople} friends and that the estimated total cost falls between ${lowerBudgetLimit} and ${upperBudgetLimit} dollars.
                 Ensure each day is filled with activities without gaps.
-                make the plans in a way that estimated total cost for a trip be really close to the given budget.
+                Make the plans in a way that the estimated total cost for the trip is very close to the given budget.
+
                 Follow the format:
 
                 Day X:\n
@@ -75,8 +79,9 @@ export function createTripPrompt(days, budget, tripType, cityName) {
         content = `Generate a detailed ${days}-day itinerary for a solo traveler in ${cityName}. 
                 The total trip budget is ${budget} dollars, with an average daily budget of ${dailyBudget} dollars.
                 Include activities like exploring local culture, visiting landmarks, and dining experiences for one.
-                Each day should be broken into morning, afternoon, and evening segments, provide approximate costs for each day and ensure no days are left empty.
-                make the plans in a way that estimated total cost for a trip be really close to the given budget.
+                Each day should be broken into morning, afternoon, and evening segments. Provide approximate costs for each day and ensure no days are left empty.
+                Make the plans in a way that the estimated total cost for the trip falls between ${lowerBudgetLimit} and ${upperBudgetLimit} dollars.
+
                 Follow the format:
 
                 Day X:\n
@@ -90,8 +95,10 @@ export function createTripPrompt(days, budget, tripType, cityName) {
     return content;
 }
 
+
+
 export const tripInputValidator = (req, res, next) => {
-    const { days, budget, tripType } = req.body;
+    const { days, budget, numberOfPeople, tripType } = req.body;
 
     if (!days || isNaN(days) || days <= 0 || !Number.isInteger(Number(days)) || days > 10) {
         return res.status(400).json({ error: "Days must be a positive integer number between 1 and 10." });
