@@ -10,8 +10,6 @@ const{ PORT, CORS_ORIGIN } = process.env;
 
 app.use(cors({ origin: CORS_ORIGIN }));
 app.use(express.json()); 
-app.use('/images', express.static("public/images"));
-
 
 
 app.use('/cities', citiesRouter);
