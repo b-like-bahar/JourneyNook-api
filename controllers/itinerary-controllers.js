@@ -2,9 +2,9 @@ import axios from "axios";
 import { createTripPrompt } from "../middleware/middleware.js";
 
 const generateItinerary = async (req, res) => {
-  const { days, budget, tripType, cityName } = req.body;
+  const { days, budget, numberOfPeople, tripType, cityName } = req.body;
 
-  if (!days || !budget || !tripType || !cityName) {
+  if (!days || !budget || !numberOfPeople || !tripType || !cityName) {
     return res.status(400).json({ error: 'All fields are required.' });
   }
 
@@ -12,7 +12,7 @@ const generateItinerary = async (req, res) => {
     return res.status(500).json({ error: 'OpenAI API key is missing' });
   }
 
-  let content = createTripPrompt(days, budget, tripType, cityName);
+  let content = createTripPrompt(days, budget, numberOfPeople, tripType, cityName);
 
   let maxTokens = days > 5 ? 1500 : 700;
 
