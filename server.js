@@ -6,10 +6,21 @@ import attractionsRouter from "./routes/attractions.js"
 import itineraryRouter from "./routes/itinerary.js";
 
 const app = express();
-const{ PORT, CORS_ORIGIN } = process.env;
+const { PORT, CORS_ORIGIN } = process.env;
+const allowedOrigins = CORS_ORIGIN.split(',');
 
-app.use(cors({ origin: CORS_ORIGIN }));
-app.use(express.json()); 
+const corsOptions = {
+    origin: function (origin, callback) {
+        if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
+            callback(null, true);
+        } else {
+            callback(new Error('Not allowed by CORS'));
+        }
+    },
+};
+
+app.use(cors(corsOptions));
+app.use(express.json());
 
 
 app.use('/cities', citiesRouter);
@@ -26,7 +37,7 @@ app.use('*', (_req, res) => {
 
 app.use((err, _req, res, _next) => {
     console.error(err.stack);
-    res.status(500).json({ error: 'Internal Server Error'});
+    res.status(500).json({ error: 'Internal Server Error' });
 })
 
 app.listen(PORT, () => {
