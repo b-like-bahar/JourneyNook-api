@@ -101,6 +101,10 @@ export const tripInputValidator = (req, res, next) => {
         return res.status(400).json({ error: "Budget must be a positive number between 1 and 20000." });
     }
 
+    if (!numberOfPeople || isNaN(numberOfPeople) || numberOfPeople <= 0 || !Number.isInteger(Number(numberOfPeople)) || numberOfPeople > 10) {
+        return res.status(400).json({ error: "Number of people must be a positive integer number between 1 and 10." });
+    }
+
     const validTripTypes = ["family", "couple", "friends", "solo"];
     if (!validTripTypes.includes(tripType)) {
         return res.status(400).json({ error: "There is no such trip type" });
