@@ -1,7 +1,7 @@
 # Project Title
 JourneyNook
 
-Checkout the Backend code at: [JourneyNook API Repository](https://github.com/b-like-bahar/JourneyNook.git)
+Checkout the Frontend code at: [JourneyNook API Repository](https://github.com/b-like-bahar/JourneyNook.git)
 
 ## Overview
 
